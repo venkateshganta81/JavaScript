@@ -11,7 +11,7 @@
     
 </head>
 
-<body>
+<body> <!-- onload="welcome();" -->
     <div>
         <h4>Java Script</h4>
 
@@ -28,8 +28,27 @@
     <div class="form">
         <input type="text" placeholder="Email" id="email">
         <input type="password" placeholder="Password" id="password">
-        <button onclick="login()">Login</button>
+        <button id="butn">Login</button>
     </div>
+
+    <select onchange="selcted(value)">
+        <option>
+            Select Categories
+        </option>
+        <option value="Shirts">
+            Shirts
+        </option>
+        <option value="Jeans ">
+            Jeans
+        </option>
+        <option value="Shoes">
+            Shoes
+        </option>
+        <option value="Watches">
+            Watches
+        </option>
+    </select>
+
     <script src="js/dom.js"></script>
 </body>
 
