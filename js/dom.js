@@ -117,6 +117,15 @@ function sortAccordingToAge(a) {
     return a;
 
 }
+/* for(i=0;i<arr.length;i++){a[i]} */
+details.forEach((x) => {
+    console.log(x);
+})
+
+
+var date = new Date().getTime();
+console.log(date);
+
 console.log(details);
 console.log(sortAccordingToAge(details));
 
@@ -164,3 +173,35 @@ console.log(conditional(4, "4")); */
     >= , <=
     != 
  */
+
+switch (4) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+}
+var showHideDemo = document.getElementById("test");
+showHideDemo.style.display = "block";
+function showHide(){
+    if(showHideDemo.style.display == "block"){
+        showHideDemo.style.display = 'none';
+    }else{
+        showHideDemo.style.display = "block"
+    }
+}
